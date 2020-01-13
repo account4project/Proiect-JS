@@ -1,0 +1,54 @@
+body {
+	background-image: url("../Backgrounds/bg.jpg");
+	background-size: 1920px 1080px;
+	background-position: center center;
+	padding-left: 15px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.grid-container {
+	display: grid;
+	grid-column-gap: 100px;
+	grid-row-gap: 50px;
+	grid-template-columns: 300px 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.grid-item {
+	font-size: 30px;
+	text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+	h1 {
+		font-size: 7.5vw;
+		margin-top: 0px;
+	}
+	
+	body { 
+		background-size: cover;
+		padding-top: 0px;
+	}	
+	
+	.grid-container {
+		margin-top: 10vw;
+		grid-row-gap: 15px;
+		grid-template-columns: 300px;
+	}
+	.grid-item {
+		font-size: 7vw;
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+	body { 
+		background-size: cover;
+	}	
+	grid-item {
+		font-size: 5vw;
+	}
+}

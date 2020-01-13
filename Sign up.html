@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="Styles/Sign Up.css">
+		<script type="text/javascript" src="JS/Sign Up.js"></script>
+		<link rel="shortcut icon" href="Favicon/favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css?family=Literata|Roboto&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div id="sign up" class="main">
+			<form class="content">
+				<div class="container">
+					<h2>Submit an application to join one of our clubs!</h2>
+					<hr>
+					<label><b>First Name</b></label>
+					<br>
+					<input type="text" placeholder="Enter First Name" name="firstName" required>
+					<br>
+					<label><b>Last Name</b></label>
+					<br>
+					<input type="text" placeholder="Enter Last Name" name="lastName" required>
+					<br>
+					<!-- <label><b>Password</b></label>
+					<br>
+					<input type="password" placeholder="Enter Password" name="password" required>
+					<br>
+					<Label><b>Repeat Password</b></label>
+					<br>
+					<input type="password" placeholder="Re-enter Password" name="rPassword" required>
+					<br>
+					-->
+					<label><b>Email Address</b></label>
+					<br>
+					<input type="email" placeholder="Enter Email" name="email" required>
+					<br>
+					<label><b>Gender</b></label>
+					<br>
+					<input type="radio" name="gender" value="male">Male
+					<input type="radio" name="gender" value="female">Female
+					<input type="radio" name="gender" value="other">Other
+					<br>
+					<label><b>Preferred Format</b></label>
+					<br>
+					<select name ="format">
+						<option value="none">No Preference</option>
+						<option value="ebooks">Ebooks</option>
+						<option value="paperback">Paperback</option>
+					</select>
+					<br>
+					<br>
+					<label><b>Preferred Genres</b></label>
+					<br>
+					<input type="checkbox" name="genre1" value="Fiction">Fiction
+					<input type="checkbox" name="genre2" value="Fantasy">Fantasy
+					<input type="checkbox" name="genre3" value="Mystery">Mystery
+					<input type="checkbox" name="genre4" value="Romance">Romance
+					<input type="checkbox" name="genre5" value="Classical">Classical
+					<input type="checkbox" name="genre6" value="Horror">Horror
+					<input type="checkbox" name="genre7" value="Crime">Crime
+					<br>
+					<label><b>Number of Books read per Year</b></label>
+					<br>
+					<input type="range" id="rng" name="booksperyear" min="0" max="100">
+					<br>
+					<div class="clearfix">
+						<button onclick="formValidation()" class="signupbtn">Sign Up</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+body {
+	background-image: url('../Backgrounds/bg.jpg');
+	background-size: 1920px 1080px;
+	background-position: center center;
+	padding-left: 15px;
+	padding-top: 250px;
+	text-align: center;
+}
+
+button {
+	background-color: #A3988C;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.colorful {
+	color: #CA0333;
+}
+
+.clearfix {
+	display: inline-block;
+	background-color: #A3988C;
+	width: 10%;
+	margin: 4px 14px;
+}
+	
+button:hover {
+	background-color: #C7B9AB;
+	opacity: 1;
+}
+
+#container {
+	text-align: center;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+	body { 
+		background-size: cover;
+		padding-top: 20px;
+	}	
+	h3 {
+		font-size: 5vw;
+	}
+	p {
+		font-size: 4.5vw;
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+	body { 
+		background-size: cover;
+		padding-top: 20px;
+	}	
+	h3 {
+		font-size: 4vw;
+	}
+	p {
+		font-size:3vw;
+	}
+}
