@@ -13,7 +13,7 @@ function changeSizeClass() {
 
 function grabData() {
 	const htp = new XMLHttpRequest();
-	const url= 'https://jsonplaceholder.typicode.com/posts/';
+	const url= 'https://jsonplaceholder.typicode.com/posts/';		// pull data from API
 	http.open("GET", url);
 	http.send();
 	http.onreadystatechange = (e) => {
